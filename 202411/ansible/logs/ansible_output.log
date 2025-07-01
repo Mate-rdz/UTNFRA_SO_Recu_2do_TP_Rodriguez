@@ -1,0 +1,358 @@
+2025-06-30 22:48:47,982 p=2050 u=mrodriguez n=ansible | - Role 2PRecuperatorio was created successfully
+2025-06-30 22:48:54,698 p=2054 u=mrodriguez n=ansible | - Role Crea_Carpetas_rodriguez was created successfully
+2025-06-30 22:49:00,455 p=2056 u=mrodriguez n=ansible | - Role Cambia_Propiedad_rodriguez was created successfully
+2025-06-30 22:49:05,978 p=2058 u=mrodriguez n=ansible | - Role Sudoers_rodriguez was created successfully
+2025-06-30 22:53:52,441 p=2090 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-06-30 22:53:52,717 p=2090 u=mrodriguez n=ansible | PLAY [localhost] ***************************************************************
+2025-06-30 22:53:52,732 p=2090 u=mrodriguez n=ansible | TASK [Gathering Facts] *********************************************************
+2025-06-30 22:53:54,315 p=2090 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:53:54,328 p=2090 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] **********************************
+2025-06-30 22:53:54,345 p=2090 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 22:53:54,369 p=2090 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] ****************************
+2025-06-30 22:53:54,753 p=2090 u=mrodriguez n=ansible | changed: [localhost]
+2025-06-30 22:53:54,763 p=2090 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] ****************
+2025-06-30 22:53:54,996 p=2090 u=mrodriguez n=ansible | changed: [localhost]
+2025-06-30 22:53:55,008 p=2090 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] ******************
+2025-06-30 22:53:55,248 p=2090 u=mrodriguez n=ansible | changed: [localhost]
+2025-06-30 22:53:55,270 p=2090 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] *********
+2025-06-30 22:53:55,533 p=2090 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 22:53:55,535 p=2090 u=mrodriguez n=ansible | PLAY RECAP *********************************************************************
+2025-06-30 22:53:55,535 p=2090 u=mrodriguez n=ansible | localhost                  : ok=5    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 22:55:56,696 p=2296 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 22:55:56,899 p=2296 u=mrodriguez n=ansible | PLAY [localhost] *******************************************************************************************************
+2025-06-30 22:55:56,910 p=2296 u=mrodriguez n=ansible | TASK [Gathering Facts] *************************************************************************************************
+2025-06-30 22:55:58,295 p=2296 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:55:58,307 p=2296 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] **************************************************************************
+2025-06-30 22:55:58,325 p=2296 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 22:55:58,348 p=2296 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] ********************************************************************
+2025-06-30 22:55:58,755 p=2296 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:55:58,767 p=2296 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] ********************************************************
+2025-06-30 22:55:59,011 p=2296 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:55:59,022 p=2296 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] **********************************************************
+2025-06-30 22:55:59,254 p=2296 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:55:59,275 p=2296 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] *************************************************
+2025-06-30 22:55:59,505 p=2296 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 22:55:59,506 p=2296 u=mrodriguez n=ansible | PLAY RECAP *************************************************************************************************************
+2025-06-30 22:55:59,506 p=2296 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 22:58:46,473 p=2504 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 22:58:46,670 p=2504 u=mrodriguez n=ansible | PLAY [localhost] *******************************************************************************************************
+2025-06-30 22:58:46,686 p=2504 u=mrodriguez n=ansible | TASK [Gathering Facts] *************************************************************************************************
+2025-06-30 22:58:48,231 p=2504 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:58:48,243 p=2504 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] **************************************************************************
+2025-06-30 22:58:48,261 p=2504 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 22:58:48,285 p=2504 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] ********************************************************************
+2025-06-30 22:58:48,673 p=2504 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:58:48,696 p=2504 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] ********************************************************
+2025-06-30 22:58:48,946 p=2504 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:58:48,958 p=2504 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] **********************************************************
+2025-06-30 22:58:49,200 p=2504 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 22:58:49,223 p=2504 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] *************************************************
+2025-06-30 22:58:49,456 p=2504 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 22:58:49,458 p=2504 u=mrodriguez n=ansible | PLAY RECAP *************************************************************************************************************
+2025-06-30 22:58:49,458 p=2504 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:02:16,769 p=2713 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:02:16,968 p=2713 u=mrodriguez n=ansible | PLAY [localhost] ******************************************************************************************************
+2025-06-30 23:02:16,980 p=2713 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:02:18,331 p=2713 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:02:18,343 p=2713 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:02:18,361 p=2713 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:02:18,388 p=2713 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *******************************************************************
+2025-06-30 23:02:18,800 p=2713 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:02:18,812 p=2713 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *******************************************************
+2025-06-30 23:02:19,044 p=2713 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:02:19,063 p=2713 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] *********************************************************
+2025-06-30 23:02:19,301 p=2713 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:02:19,323 p=2713 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Esperar 1 segundo para asegurar usuarios disponibles] ******************************
+2025-06-30 23:02:19,338 p=2713 u=mrodriguez n=ansible | Pausing for 1 seconds
+2025-06-30 23:02:19,339 p=2713 u=mrodriguez n=ansible | (ctrl+C then 'C' = continue early, ctrl+C then 'A' = abort)
+2025-06-30 23:02:20,352 p=2713 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:02:20,369 p=2713 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] ************************************************
+2025-06-30 23:02:20,634 p=2713 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:02:20,636 p=2713 u=mrodriguez n=ansible | PLAY RECAP ************************************************************************************************************
+2025-06-30 23:02:20,636 p=2713 u=mrodriguez n=ansible | localhost                  : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:10:34,971 p=2928 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-06-30 23:10:35,169 p=2928 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] **************************************************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:35,180 p=2928 u=mrodriguez n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:36,675 p=2928 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:10:36,688 p=2928 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *********************************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:36,705 p=2928 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:10:36,728 p=2928 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] ******************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:37,114 p=2928 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:10:37,126 p=2928 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ********************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:37,371 p=2928 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:10:37,392 p=2928 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] *******************************************************************************************************************************************************************************************
+2025-06-30 23:10:37,653 p=2928 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:10:37,654 p=2928 u=mrodriguez n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************************************************************************
+2025-06-30 23:10:37,655 p=2928 u=mrodriguez n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:14:55,623 p=3106 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:14:55,824 p=3106 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-06-30 23:14:55,835 p=3106 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:14:57,321 p=3106 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:14:57,333 p=3106 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:14:57,350 p=3106 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:14:57,375 p=3106 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] **********************************************************
+2025-06-30 23:14:57,768 p=3106 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:14:57,779 p=3106 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ************************************************************
+2025-06-30 23:14:58,013 p=3106 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:14:58,036 p=3106 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] ***********************************
+2025-06-30 23:14:58,291 p=3106 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:14:58,292 p=3106 u=mrodriguez n=ansible | PLAY RECAP ************************************************************************************************************
+2025-06-30 23:14:58,292 p=3106 u=mrodriguez n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:18:53,954 p=3292 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:18:54,149 p=3292 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-06-30 23:18:54,160 p=3292 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:18:55,629 p=3292 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:18:55,644 p=3292 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:18:55,665 p=3292 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:18:55,691 p=3292 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] **********************************************************
+2025-06-30 23:18:56,094 p=3292 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:18:56,106 p=3292 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ************************************************************
+2025-06-30 23:18:56,349 p=3292 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:18:56,371 p=3292 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Esperar que el usuario alumno exista] **********************************************
+2025-06-30 23:24:24,450 p=3292 u=mrodriguez n=ansible |  [ERROR]: User interrupted execution
+
+2025-06-30 23:31:46,908 p=1993 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:31:47,176 p=1993 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-06-30 23:31:47,194 p=1993 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:31:48,652 p=1993 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:31:48,667 p=1993 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:31:48,689 p=1993 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:31:48,714 p=1993 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] **********************************************************
+2025-06-30 23:31:49,128 p=1993 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:31:49,146 p=1993 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ************************************************************
+2025-06-30 23:31:49,391 p=1993 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:31:49,414 p=1993 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] ***********************************
+2025-06-30 23:31:49,653 p=1993 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:31:49,654 p=1993 u=mrodriguez n=ansible | PLAY RECAP ************************************************************************************************************
+2025-06-30 23:31:49,654 p=1993 u=mrodriguez n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:33:46,383 p=2179 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:33:46,583 p=2179 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-06-30 23:33:46,594 p=2179 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:33:48,026 p=2179 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:33:48,039 p=2179 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:33:48,056 p=2179 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:33:48,080 p=2179 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] **********************************************************
+2025-06-30 23:33:48,459 p=2179 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:33:48,471 p=2179 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ************************************************************
+2025-06-30 23:33:48,702 p=2179 u=mrodriguez n=ansible | ok: [localhost]
+2025-06-30 23:33:48,725 p=2179 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] ***********************************
+2025-06-30 23:33:48,958 p=2179 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:33:48,959 p=2179 u=mrodriguez n=ansible | PLAY RECAP ************************************************************************************************************
+2025-06-30 23:33:48,959 p=2179 u=mrodriguez n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-06-30 23:42:10,239 p=2362 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-06-30 23:42:10,476 p=2362 u=root n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-06-30 23:42:10,487 p=2362 u=root n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-06-30 23:42:11,934 p=2362 u=root n=ansible | ok: [localhost]
+2025-06-30 23:42:11,946 p=2362 u=root n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-06-30 23:42:11,964 p=2362 u=root n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-06-30 23:42:11,987 p=2362 u=root n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] **********************************************************
+2025-06-30 23:42:12,357 p=2362 u=root n=ansible | ok: [localhost]
+2025-06-30 23:42:12,369 p=2362 u=root n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] ************************************************************
+2025-06-30 23:42:12,596 p=2362 u=root n=ansible | ok: [localhost]
+2025-06-30 23:42:12,617 p=2362 u=root n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] ***********************************
+2025-06-30 23:42:12,838 p=2362 u=root n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-06-30 23:42:12,839 p=2362 u=root n=ansible | PLAY RECAP ************************************************************************************************************
+2025-06-30 23:42:12,840 p=2362 u=root n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:29:05,765 p=2606 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match
+'all'
+
+2025-07-01 00:29:05,977 p=2606 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ******************************************************************************************
+2025-07-01 00:29:05,989 p=2606 u=mrodriguez n=ansible | TASK [Gathering Facts] ************************************************************************************************
+2025-07-01 00:29:07,428 p=2606 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:29:07,441 p=2606 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *************************************************************************
+2025-07-01 00:29:07,458 p=2606 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:29:07,482 p=2606 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *******************************************************************
+2025-07-01 00:29:07,875 p=2606 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:29:07,885 p=2606 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *******************************************************
+2025-07-01 00:29:08,126 p=2606 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:29:08,138 p=2606 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] *********************************************************
+2025-07-01 00:29:08,380 p=2606 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:29:08,402 p=2606 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] ************************************************
+2025-07-01 00:29:08,640 p=2606 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:29:08,641 p=2606 u=mrodriguez n=ansible | PLAY RECAP ************************************************************************************************************
+2025-07-01 00:29:08,642 p=2606 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:31:40,342 p=2813 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:31:40,543 p=2813 u=mrodriguez n=ansible | PLAY [localhost] ***********************************************************************************************************************
+2025-07-01 00:31:40,554 p=2813 u=mrodriguez n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2025-07-01 00:31:42,105 p=2813 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:31:42,119 p=2813 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ******************************************************************************************
+2025-07-01 00:31:42,137 p=2813 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:31:42,162 p=2813 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] ************************************************************************************
+2025-07-01 00:31:42,568 p=2813 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:31:42,579 p=2813 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] ************************************************************************
+2025-07-01 00:31:42,828 p=2813 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:31:42,839 p=2813 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] **************************************************************************
+2025-07-01 00:31:43,080 p=2813 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:31:43,102 p=2813 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño alumno a /UTN/Alumno] *****************************************************************
+2025-07-01 00:31:43,342 p=2813 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user alumno", "owner": "root", "path": "/UTN/Alumno", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:31:43,343 p=2813 u=mrodriguez n=ansible | PLAY RECAP *****************************************************************************************************************************
+2025-07-01 00:31:43,344 p=2813 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:33:22,311 p=3019 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:33:22,538 p=3019 u=mrodriguez n=ansible | PLAY [localhost] ***********************************************************************************************************************
+2025-07-01 00:33:22,554 p=3019 u=mrodriguez n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2025-07-01 00:33:24,299 p=3019 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:33:24,313 p=3019 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] ******************************************************************************************
+2025-07-01 00:33:24,329 p=3019 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:33:24,355 p=3019 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] ************************************************************************************
+2025-07-01 00:33:24,749 p=3019 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:33:24,761 p=3019 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] ************************************************************************
+2025-07-01 00:33:25,003 p=3019 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:33:25,015 p=3019 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] **************************************************************************
+2025-07-01 00:33:25,258 p=3019 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:33:25,280 p=3019 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño profesor a /UTN/Profesor] *************************************************************
+2025-07-01 00:33:25,530 p=3019 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user profesor", "owner": "root", "path": "/UTN/Profesor", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:33:25,531 p=3019 u=mrodriguez n=ansible | PLAY RECAP *****************************************************************************************************************************
+2025-07-01 00:33:25,531 p=3019 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:37:23,002 p=3227 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:37:23,208 p=3227 u=mrodriguez n=ansible | PLAY [localhost] ************************************************************************************************************************************
+2025-07-01 00:37:23,220 p=3227 u=mrodriguez n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************
+2025-07-01 00:37:24,645 p=3227 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:37:24,659 p=3227 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************
+2025-07-01 00:37:24,678 p=3227 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:37:24,702 p=3227 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *************************************************************************************************
+2025-07-01 00:37:25,094 p=3227 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:37:25,105 p=3227 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *************************************************************************************
+2025-07-01 00:37:25,343 p=3227 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:37:25,354 p=3227 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] ***************************************************************************************
+2025-07-01 00:37:25,608 p=3227 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:37:25,630 p=3227 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño profesor a /UTN/Profesor] **************************************************************************
+2025-07-01 00:37:25,866 p=3227 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user profesor", "owner": "root", "path": "/UTN/Profesor", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:37:25,868 p=3227 u=mrodriguez n=ansible | PLAY RECAP ******************************************************************************************************************************************
+2025-07-01 00:37:25,868 p=3227 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:38:32,928 p=3433 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:38:33,136 p=3433 u=mrodriguez n=ansible | PLAY [localhost] ************************************************************************************************************************************
+2025-07-01 00:38:33,148 p=3433 u=mrodriguez n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************
+2025-07-01 00:38:34,609 p=3433 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:38:34,622 p=3433 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************
+2025-07-01 00:38:34,640 p=3433 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:38:34,664 p=3433 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *************************************************************************************************
+2025-07-01 00:38:35,200 p=3433 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:38:35,213 p=3433 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *************************************************************************************
+2025-07-01 00:38:35,465 p=3433 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:38:35,477 p=3433 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] ***************************************************************************************
+2025-07-01 00:38:35,721 p=3433 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:38:35,745 p=3433 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño profesor a /UTN/Profesor] **************************************************************************
+2025-07-01 00:38:35,985 p=3433 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user profesor", "owner": "root", "path": "/UTN/Profesor", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:38:35,986 p=3433 u=mrodriguez n=ansible | PLAY RECAP ******************************************************************************************************************************************
+2025-07-01 00:38:35,986 p=3433 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:42:57,019 p=3644 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:42:57,224 p=3644 u=mrodriguez n=ansible | PLAY [localhost] ************************************************************************************************************************************
+2025-07-01 00:42:57,237 p=3644 u=mrodriguez n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************
+2025-07-01 00:42:59,700 p=3644 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:42:59,713 p=3644 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************
+2025-07-01 00:42:59,730 p=3644 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:42:59,753 p=3644 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *************************************************************************************************
+2025-07-01 00:43:00,150 p=3644 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:43:00,162 p=3644 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *************************************************************************************
+2025-07-01 00:43:00,399 p=3644 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:43:00,410 p=3644 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] ***************************************************************************************
+2025-07-01 00:43:00,650 p=3644 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:43:00,672 p=3644 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño profesor a /UTN/Profesor] **************************************************************************
+2025-07-01 00:43:00,911 p=3644 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user profesor", "owner": "root", "path": "/UTN/Profesor", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:43:00,912 p=3644 u=mrodriguez n=ansible | PLAY RECAP ******************************************************************************************************************************************
+2025-07-01 00:43:00,912 p=3644 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 00:45:40,180 p=3850 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2025-07-01 00:45:40,380 p=3850 u=mrodriguez n=ansible | PLAY [localhost] ************************************************************************************************************************************
+2025-07-01 00:45:40,392 p=3850 u=mrodriguez n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************
+2025-07-01 00:45:41,890 p=3850 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:45:41,902 p=3850 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] *******************************************************************************************************
+2025-07-01 00:45:41,923 p=3850 u=mrodriguez n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2025-07-01 00:45:41,946 p=3850 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN] *************************************************************************************************
+2025-07-01 00:45:42,358 p=3850 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:45:42,370 p=3850 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Profesor] *************************************************************************************
+2025-07-01 00:45:42,625 p=3850 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:45:42,636 p=3850 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear subcarpeta /UTN/Alumno] ***************************************************************************************
+2025-07-01 00:45:42,894 p=3850 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 00:45:42,915 p=3850 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar dueño profesor a /UTN/Profesor] **************************************************************************
+2025-07-01 00:45:43,156 p=3850 u=mrodriguez n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "gid": 0, "group": "root", "mode": "0755", "msg": "chown failed: failed to look up user profesor", "owner": "root", "path": "/UTN/Profesor", "size": 4096, "state": "directory", "uid": 0}
+2025-07-01 00:45:43,158 p=3850 u=mrodriguez n=ansible | PLAY RECAP ******************************************************************************************************************************************
+2025-07-01 00:45:43,158 p=3850 u=mrodriguez n=ansible | localhost                  : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2025-07-01 15:23:35,947 p=2058 u=mrodriguez n=ansible | - Role roles/2PRecuperatorio was created successfully
+2025-07-01 15:23:44,983 p=2063 u=mrodriguez n=ansible | - Role roles/Crea_Carpetas_rodriguez was created successfully
+2025-07-01 15:23:51,389 p=2065 u=mrodriguez n=ansible | - Role roles/Cambia_Propiedad_rodriguez was created successfully
+2025-07-01 15:23:58,090 p=2067 u=mrodriguez n=ansible | - Role roles/Sudoers_rodriguez was created successfully
+2025-07-01 15:26:34,665 p=2075 u=mrodriguez n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that
+the implicit localhost does not match 'all'
+
+2025-07-01 15:26:34,928 p=2075 u=mrodriguez n=ansible | PLAY [Playbook para Punto D] ***************************************************
+2025-07-01 15:26:34,944 p=2075 u=mrodriguez n=ansible | TASK [Gathering Facts] *********************************************************
+2025-07-01 15:26:36,476 p=2075 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 15:26:36,489 p=2075 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Crear grupo GProfesores] *******************************
+2025-07-01 15:26:36,916 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:36,928 p=2075 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Crear grupo GAlumnos] **********************************
+2025-07-01 15:26:37,169 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:37,181 p=2075 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Crear usuario profesor] ********************************
+2025-07-01 15:26:37,688 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:37,700 p=2075 u=mrodriguez n=ansible | TASK [2PRecuperatorio : Crear usuario alumno] **********************************
+2025-07-01 15:26:38,002 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:38,024 p=2075 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Profesor] *******************
+2025-07-01 15:26:38,409 p=2075 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 15:26:38,421 p=2075 u=mrodriguez n=ansible | TASK [Crea_Carpetas_rodriguez : Crear carpeta /UTN/Alumno] *********************
+2025-07-01 15:26:38,674 p=2075 u=mrodriguez n=ansible | ok: [localhost]
+2025-07-01 15:26:38,702 p=2075 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Alumno al usuario alumno] ***
+2025-07-01 15:26:38,949 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:38,961 p=2075 u=mrodriguez n=ansible | TASK [Cambia_Propiedad_rodriguez : Asignar propiedad /UTN/Profesor al usuario profesor] ***
+2025-07-01 15:26:39,203 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:39,226 p=2075 u=mrodriguez n=ansible | TASK [Sudoers_rodriguez : Permitir sudo sin contraseña al grupo GProfesores] ***
+2025-07-01 15:26:39,938 p=2075 u=mrodriguez n=ansible | changed: [localhost]
+2025-07-01 15:26:39,953 p=2075 u=mrodriguez n=ansible | PLAY RECAP *********************************************************************
+2025-07-01 15:26:39,954 p=2075 u=mrodriguez n=ansible | localhost                  : ok=10   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

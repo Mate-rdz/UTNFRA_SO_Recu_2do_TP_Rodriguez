@@ -1,0 +1,9 @@
+- name: Playbook para Punto D
+  hosts: localhost
+  become: true
+  roles:
+    - 2PRecuperatorio
+    - Crea_Carpetas_rodriguez
+    - Cambia_Propiedad_rodriguez
+    - Sudoers_rodriguez
+

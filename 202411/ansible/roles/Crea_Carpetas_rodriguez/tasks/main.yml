@@ -1,0 +1,14 @@
+---
+# tasks file for roles/Crea_Carpetas_rodriguez
+- name: Crear carpeta /UTN/Profesor
+  file:
+    path: /UTN/Profesor
+    state: directory
+    recurse: yes
+
+- name: Crear carpeta /UTN/Alumno
+  file:
+    path: /UTN/Alumno
+    state: directory
+    recurse: yes
+

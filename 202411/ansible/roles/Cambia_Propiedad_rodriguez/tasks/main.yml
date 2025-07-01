@@ -1,0 +1,14 @@
+---
+# tasks file for roles/Cambia_Propiedad_rodriguez
+- name: Asignar propiedad /UTN/Alumno al usuario alumno
+  file:
+    path: /UTN/Alumno
+    owner: alumno
+    recurse: yes
+
+- name: Asignar propiedad /UTN/Profesor al usuario profesor
+  file:
+    path: /UTN/Profesor
+    owner: profesor
+    recurse: yes
+

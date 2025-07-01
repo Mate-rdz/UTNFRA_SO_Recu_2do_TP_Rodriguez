@@ -1,0 +1,8 @@
+---
+# tasks file for roles/Sudoers_rodriguez
+- name: Permitir sudo sin contraseña al grupo GProfesores
+  copy:
+    dest: /etc/sudoers.d/GProfesores
+    content: "%GProfesores ALL=(ALL) NOPASSWD:ALL\n"
+    mode: 0440
+
